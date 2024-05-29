@@ -1,11 +1,18 @@
 
 header{
+    background-color: #2b2b2bec;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 100px;
     color: var(--text-color);
     .HeaderLogo{
+        cursor: pointer;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -27,21 +34,13 @@ header{
         justify-content: space-between;
         font-family: var(--work-sans);
         font-size: var(--font-size-base);
+        li{
+            cursor: pointer;
+        }
 
         button{
-            color: var(--text-color);
-            background-color: var(--call-to-action);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: var(--font-size-caption);
-            width: 156px;
-            height: 60px;
-            gap: 12;
-            img{
-                height: 20px;
-                width: 20px;
-            }
+            @include ButtonWithImage(var(--call-to-action),
+             60px, 156px, 12px, 20px, 20px, var(--font-size-base));
         }
     }
 }

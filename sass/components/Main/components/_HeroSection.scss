@@ -1,0 +1,101 @@
+.HeroSection{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .HeroSelectionList{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10vh;
+        gap: 30px;
+        color: var(--text-color);
+        .LeftHeroSection{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            .HeroTitle{
+                font-family: var(--work-sans);
+                font-size: var(--font-size-h1);
+            }
+
+            .HeroParahraf{
+                font-family: var(--work-sans);
+                font-size: var(--font-size-h5);
+            }
+
+            button{
+                @include ButtonWithImage(var(--call-to-action), 60px, 224px, 12px,
+                 20px, 20px, var(--font-size-base));
+            }
+
+            .AddInfoList{
+                display: flex;
+                gap: 30px;
+                
+                .AddInfo{
+                    display: flex;
+                    flex-direction: column;
+
+                    span{
+                        &:nth-child(odd){
+                            font-size: var(--font-size-h4);
+                            font-family: var(--space-momo);
+                        }
+
+                        &:nth-child(even){
+                            font-size: var(--font-size-h5);
+                            font-family: var(--work-sans);
+                        }
+                    }
+                }
+            }
+        }
+
+        .RightHeroSection{
+            display: flex;
+            flex-direction: column;
+            .RightHeroSelectionFooter{
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                background-color: var(--background-secondary);
+                border-bottom-left-radius: var(--font-size-caption);
+                border-bottom-right-radius: var(--font-size-caption);
+
+                span{
+                    font-size: var(--font-size-h5);
+                    font-family: var(--work-sans);
+                    padding-top: 2vh;
+                    padding-left: 2vh;
+                }
+
+                ul{
+                    display: flex;
+                    padding-left: 2vh;
+                    padding-bottom: 2vh;
+                    gap: 12px;
+
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    li{
+                        &:nth-child(2){
+                            align-self: center;
+                            font-family: var(--work-sans);
+                            font-size: var(--font-size-base);
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }   
+}

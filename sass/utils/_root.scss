@@ -28,4 +28,24 @@
     --border-radius-20:20%;
 }
 
+@mixin ButtonWithImage($bc, $H, $W, $gap, $imgH, $imgW, $fs){
+        cursor: pointer;
+        color: var(--text-color);
+        background-color: $bc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--font-size-caption);
+        width: $W;
+        height: $H;
+        gap: $gap;
+        font-size: $fs;
+            
+        img{
+            height: $imgH;
+            width: $imgW;
+        }
+    
+}
+
 
