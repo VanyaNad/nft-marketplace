@@ -1,2 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
+    --space-momo: Space Mono;
+    --work-sans: Work Sans;
+    --background: #2B2B2B;
+    --background-secondary:#3B3B3B;
+    --capital-label-test:#858584;
+    --text-color:#FFFFFF;
+    --call-to-action:#A259FF;
+    --filter-white-to-action-color:invert(34%) 
+            sepia(100%) saturate(6897%) 
+            hue-rotate(243deg) brightness(102%) 
+            contrast(108%);
+    --gradient-1: linear-gradient(var(--call-to-action), #FF6250);
+    --gradient-2: linear-gradient(var(--call-to-action), #377DF7);
+    --primary-button:72px;
+    --secondary-button:60px;
+    --tertiary-button:46px;
+    --font-size-h1: 67px;
+    --font-size-h3: 38px;
+    --font-size-h4: 28px;
+    --font-size-h5: 22px;
+    --font-size-h2: 51px;
+    --font-size-base: 16px;
+    --font-size-caption: 12px;
+    --border-radius-20:20%;
 }
+
+
