@@ -1,0 +1,31 @@
+@media (max-width: 1024px){
+    .HeroSelectionList{
+        flex-direction: column;
+        
+    }
+    .LeftHeroSection{
+        order: 2;
+    }
+    .RightHeroSection{
+        order: 1;
+    }
+}
+
+@media (max-width: 550px){
+    .HeroSelectionList{
+        transform: scale(0.9);
+        z-index: 0;
+    }
+    .HeroSection{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    .HeroSelectionList{
+        transform: scale(0.8);
+    }
+    .HeroSection{
+        margin-top: -40px;
+    }
+}

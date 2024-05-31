@@ -1,0 +1,46 @@
+@media (max-width: 1024px) {
+    header {
+        z-index: 1;
+        justify-content: space-evenly;
+        
+        .burger {
+            display: flex;
+            position: relative;
+        }
+        
+        .HeaderList {
+            position: fixed;
+            right: -100%;
+            padding: 0 20px;
+            background: #2b2b2bec;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.3s;
+            backdrop-filter: blur(10px);
+            padding-bottom: 10px;
+            border-radius: var(--font-size-caption);
+        }
+        
+        .HeaderList.open {
+            top: 90px;
+            right: 0;
+        }
+    }
+
+    .burger.open span:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+
+    }
+
+    .burger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+
+    }
+}
