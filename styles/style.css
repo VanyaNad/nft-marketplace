@@ -319,8 +319,8 @@ header .burger span:nth-child(odd) {
 }
 @media (max-width: 480px) {
   .HeroSelectionList {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.76);
+            transform: scale(0.76);
   }
   .HeroSection {
     margin-top: -40px;
@@ -343,7 +343,7 @@ header .burger span:nth-child(odd) {
     position: fixed;
     right: -100%;
     padding: 0 20px;
-    background: rgba(43, 43, 43, 0.9254901961);
+    background: var(--background);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -377,5 +377,19 @@ header .burger span:nth-child(odd) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     position: absolute;
+  }
+}
+@media (max-width: 480px) {
+  .HeaderLogo {
+    -webkit-transform: scale(0.76);
+            transform: scale(0.76);
+  }
+  .HeaderList {
+    -webkit-transform: scale(0.76);
+            transform: scale(0.76);
+  }
+  .burger {
+    -webkit-transform: scale(0.76);
+            transform: scale(0.76);
   }
 }
