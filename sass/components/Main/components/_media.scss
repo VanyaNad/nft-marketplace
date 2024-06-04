@@ -1,23 +1,53 @@
 @media (max-width: 1024px){
     .HeroSelectionList{
-        flex-direction: column;
-        
+        transform: scale(0.9);
     }
-    .LeftHeroSection{
-        order: 2;
+}
+
+@media (max-width: 1009px){
+    .HeroSelectionList{
+        transform: scale(0.8);
     }
-    .RightHeroSection{
-        order: 1;
+}
+
+@media (max-width: 900px){
+    .HeroSelectionList{
+        transform: scale(0.8);
     }
+}
+
+@media (max-width: 700px){
+    .HeroSelectionList{
+        transform: scale(0.7);
+    }
+
+    .HeroSection{
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 620px){
+    .HeroSelectionList{
+        transform: scale(0.6);
+    }
+
 }
 
 @media (max-width: 550px){
     .HeroSelectionList{
+        flex-direction: column;
         transform: scale(0.9);
         z-index: 0;
     }
     .HeroSection{
         margin-top: 10px;
+    }
+    
+    .LeftHeroSection{
+        order: 2;
+    }
+    .RightHeroSection{
+        order: 1;
     }
 }
 

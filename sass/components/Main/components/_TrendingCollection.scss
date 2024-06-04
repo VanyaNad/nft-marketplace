@@ -1,0 +1,111 @@
+$background-color: #3A3A3C;
+$border-radius: 20px;
+$gap: 10px;
+$number-background-color: #915EF0;
+$number-color: white;
+$number-font-size: 24px;
+$number-font-weight: bold;
+
+.Main{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.TrendingCollection{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 60px;
+    color: var(--text-color);
+
+
+    .headerText{
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 10px;
+        
+        span{
+            font-family: var(--work-sans);
+            font-size: var(--font-size-h3);
+        }
+
+        p{
+            font-family: var(--work-sans);
+            font-size: var(--font-size-base);
+        }
+    }
+
+    .TrendingCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .CardContent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            div{
+                border-radius: var(--font-size-caption);
+                img{
+                    border-radius: var(--font-size-caption);
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .div1 { grid-area: 1 / 1 / 4 / 4; 
+                img{
+                    width: 330px;
+                    height: 330px;
+                }
+            }
+            .div2 { grid-area: 4 / 1 / 5 / 2;}
+            .div3 { grid-area: 4 / 2 / 5 / 3;}
+            .div4 { 
+                grid-area: 4 / 3 / 5 / 4; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--call-to-action);
+                width: 100px;
+                height: 100px;
+                font-family: var(--space-mono);
+                font-size: var(--s);
+            }
+
+        }
+
+        .CardInfo{
+            grid-area: 5 / 1 / 6 / 4;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span{
+                font-family: var(--work-sana);
+                font-size: var(--font-size-h5);
+            }
+
+            p{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-family: var(--work-sana);
+                font-size: var(--font-size-base);
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+
+        
+    }
+}

@@ -154,7 +154,6 @@ header .burger span:nth-child(odd) {
 }
 
 .HeroSection {
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,12 +288,189 @@ header .burger span:nth-child(odd) {
   font-size: var(--font-size-base);
 }
 
+.Main {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 160px;
+}
+
+.TrendingCollection {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 60px;
+  color: var(--text-color);
+}
+.TrendingCollection .headerText {
+  justify-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+}
+.TrendingCollection .headerText span {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-h3);
+}
+.TrendingCollection .headerText p {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-base);
+}
+.TrendingCollection .TrendingCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.TrendingCollection .TrendingCard .CardContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.TrendingCollection .TrendingCard .CardContent div {
+  border-radius: var(--font-size-caption);
+}
+.TrendingCollection .TrendingCard .CardContent div img {
+  border-radius: var(--font-size-caption);
+  width: 100px;
+  height: 100px;
+}
+.TrendingCollection .TrendingCard .CardContent .div1 {
+  grid-area: 1/1/4/4;
+}
+.TrendingCollection .TrendingCard .CardContent .div1 img {
+  width: 330px;
+  height: 330px;
+}
+.TrendingCollection .TrendingCard .CardContent .div2 {
+  grid-area: 4/1/5/2;
+}
+.TrendingCollection .TrendingCard .CardContent .div3 {
+  grid-area: 4/2/5/3;
+}
+.TrendingCollection .TrendingCard .CardContent .div4 {
+  grid-area: 4/3/5/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--call-to-action);
+  width: 100px;
+  height: 100px;
+  font-family: var(--space-mono);
+  font-size: var(--s);
+}
+.TrendingCollection .TrendingCard .CardInfo {
+  grid-area: 5/1/6/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.TrendingCollection .TrendingCard .CardInfo span {
+  font-family: var(--work-sana);
+  font-size: var(--font-size-h5);
+}
+.TrendingCollection .TrendingCard .CardInfo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  font-family: var(--work-sana);
+  font-size: var(--font-size-base);
+}
+.TrendingCollection .TrendingCard .CardInfo p img {
+  width: 24px;
+  height: 24px;
+}
+
 @media (max-width: 1024px) {
+  .HeroSelectionList {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+@media (max-width: 1009px) {
+  .HeroSelectionList {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media (max-width: 900px) {
+  .HeroSelectionList {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@media (max-width: 700px) {
+  .HeroSelectionList {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .HeroSection {
+    margin-top: -40px;
+  }
+}
+@media (max-width: 620px) {
+  .HeroSelectionList {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+}
+@media (max-width: 550px) {
   .HeroSelectionList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    z-index: 0;
+  }
+  .HeroSection {
+    margin-top: 10px;
   }
   .LeftHeroSection {
     -webkit-box-ordinal-group: 3;
@@ -305,16 +481,6 @@ header .burger span:nth-child(odd) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-  }
-}
-@media (max-width: 550px) {
-  .HeroSelectionList {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
-    z-index: 0;
-  }
-  .HeroSection {
-    margin-top: 10px;
   }
 }
 @media (max-width: 480px) {
