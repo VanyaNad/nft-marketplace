@@ -339,6 +339,7 @@ header .burger span:nth-child(odd) {
   font-size: var(--font-size-base);
 }
 .TrendingCollection .TrendingCard {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +394,7 @@ header .burger span:nth-child(odd) {
   width: 100px;
   height: 100px;
   font-family: var(--space-mono);
-  font-size: var(--s);
+  font-size: var(--font-size-h5);
 }
 .TrendingCollection .TrendingCard .CardInfo {
   grid-area: 5/1/6/4;
@@ -407,7 +408,7 @@ header .burger span:nth-child(odd) {
   gap: 10px;
 }
 .TrendingCollection .TrendingCard .CardInfo span {
-  font-family: var(--work-sana);
+  font-family: var(--work-sans);
   font-size: var(--font-size-h5);
 }
 .TrendingCollection .TrendingCard .CardInfo p {
@@ -418,7 +419,7 @@ header .burger span:nth-child(odd) {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  font-family: var(--work-sana);
+  font-family: var(--work-sans);
   font-size: var(--font-size-base);
 }
 .TrendingCollection .TrendingCard .CardInfo p img {
@@ -431,11 +432,22 @@ header .burger span:nth-child(odd) {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
+  .CardContent:last-child {
+    display: none !important;
+  }
+  .TrendingCollection {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
 }
 @media (max-width: 1009px) {
   .HeroSelectionList {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+  .TrendingCollection {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 @media (max-width: 900px) {
@@ -443,11 +455,20 @@ header .burger span:nth-child(odd) {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
+  .TrendingCollection {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 @media (max-width: 700px) {
   .HeroSelectionList {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+  .TrendingCollection {
+    margin-top: -200px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .HeroSection {
     margin-top: -40px;
@@ -457,6 +478,9 @@ header .burger span:nth-child(odd) {
   .HeroSelectionList {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
+  }
+  .TrendingCollection {
+    margin-top: -300px;
   }
 }
 @media (max-width: 550px) {
@@ -470,7 +494,7 @@ header .burger span:nth-child(odd) {
     z-index: 0;
   }
   .HeroSection {
-    margin-top: 10px;
+    margin-top: -50px;
   }
   .LeftHeroSection {
     -webkit-box-ordinal-group: 3;
@@ -481,6 +505,14 @@ header .burger span:nth-child(odd) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+  .CardContent:nth-child(2) {
+    display: none !important;
+  }
+  .TrendingCollection {
+    margin-top: -100px;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 @media (max-width: 480px) {
