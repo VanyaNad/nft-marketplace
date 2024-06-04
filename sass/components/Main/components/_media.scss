@@ -85,7 +85,7 @@
         }
     }
     .TrendingCollection{
-        margin-top: -100px;
+        margin-top: -200px;
         transform: scale(1.1);
     }
 }
@@ -95,6 +95,10 @@
         transform: scale(0.76);
     }
     .HeroSection{
-        margin-top: -40px;
+        margin-top: -150px;
+    }
+
+    .TrendingCollection{
+        transform: scale(1);
     }
 }

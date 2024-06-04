@@ -510,7 +510,7 @@ header .burger span:nth-child(odd) {
     display: none !important;
   }
   .TrendingCollection {
-    margin-top: -100px;
+    margin-top: -200px;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
@@ -521,7 +521,11 @@ header .burger span:nth-child(odd) {
             transform: scale(0.76);
   }
   .HeroSection {
-    margin-top: -40px;
+    margin-top: -150px;
+  }
+  .TrendingCollection {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @media (max-width: 1024px) {
