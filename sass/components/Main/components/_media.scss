@@ -1,6 +1,7 @@
 @media (max-width: 1024px){
-    .HeroSelectionList{
+    .Main{
         transform: scale(0.9);
+        margin-top: -50px;
     }
 
     .CardContent{
@@ -10,62 +11,139 @@
 
     }
 
-    .TrendingCollection{
-        transform: scale(1.1);
-    }
 }
 
 @media (max-width: 1009px){
-    .HeroSelectionList{
-        transform: scale(0.8);
+    .Main{
+        margin-top: -100px;
     }
 
-    .TrendingCollection{
-        transform: scale(0.9);
+    .TopCreators {
+        .TopCreatorsHeader{
+            gap: 50px;
+            .TopCreatorsText{
+                li{
+                    &:first-child{
+                        font-family: var(--work-sans);
+                        font-size: var(--font-size-h4);
+                    }
+
+                    &:last-child{
+                        font-family: var(--work-sans);
+                        font-size: var(--font-size-base);
+                    }
+                }
+            }
+
+        }
+
+    
+    .TopCreatorsList {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+
+        li{
+            width: 330px;
+            height: 100px;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+
+            span{
+                text-align: start;
+            }    
+
+            img{
+                width: 60px;
+                height: 60px;
+            }
+            &:nth-child(1){
+                grid-area: 1 / 1 / 2 / 2 ;
+            }
+            &:nth-child(2){
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            &:nth-child(3){
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            &:nth-child(4){
+                grid-area: 2 / 2 / 3 / 3;
+            }
+            &:nth-child(5){
+                grid-area: 3 / 1 / 4 / 2;
+            }
+            &:nth-child(6){
+                grid-area: 3 / 2 / 4 / 3;
+            }
+            &:nth-child(7){
+                display: none !important;
+            }
+            &:nth-child(8){
+                display: none !important;
+            }
+            &:nth-child(9){
+                display: none !important;
+            }
+            &:nth-child(10){
+                display: none !important;
+            }
+            &:nth-child(11){
+                display: none !important;
+            }
+            &:nth-child(12){
+                display: none !important;
+            }
+        }
+        
+    }  
     }
+
 }
 
 @media (max-width: 900px){
-    .HeroSelectionList{
-        transform: scale(0.8);
-    }
-    .TrendingCollection{
-        transform: scale(0.9);
-    }
-
-
+        .Main{
+            transform: scale(0.8);
+            margin-top: -150px;
+         }
 }
 
-@media (max-width: 700px){
-    .HeroSelectionList{
-        transform: scale(0.7);
-    }
-    .TrendingCollection{
-        margin-top: -200px;
+
+
+
+
+@media (max-width: 750px){
+
+    .Main{
         transform: scale(0.8);
-    }
+        margin-top: -200px;
+        .HeroSection{
+            transform: scale(0.82);
+        }
 
-
-    .HeroSection{
-        margin-top: -40px;
     }
+ 
 }
 
 @media (max-width: 620px){
-    .HeroSelectionList{
-        transform: scale(0.6);
-    }
-
-    .TrendingCollection{
-        margin-top: -300px;
+    .Main{
+        margin-top: -250px;
+        transform: scale(0.7);
+        .HeroSection{
+            transform: scale(0.8);
+        }
     }
 
 }
 
 @media (max-width: 550px){
+    .Main{
+        margin-top: -100px;
+        transform: scale(0.9);
+    }
+
     .HeroSelectionList{
         flex-direction: column;
-        transform: scale(0.9);
         z-index: 0;
     }
     .HeroSection{
@@ -86,19 +164,75 @@
     }
     .TrendingCollection{
         margin-top: -200px;
-        transform: scale(1.1);
     }
+
+    .TopCreators{
+        margin-top: -100px;
+        .TopCreatorsHeader{
+            flex-direction: column;
+
+            button{
+                height: 60px;
+            }
+        }
+
+    .TopCreatorsList {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        align-items: center;
+        justify-items: center;
+
+
+        li{
+            width: 100%; 
+
+            &:nth-child(1){
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            &:nth-child(2){
+                grid-area: 2 / 1 / 3 / 2;
+            }
+            &:nth-child(3){
+                grid-area: 3 / 1 / 4 / 2;
+            }
+            &:nth-child(4){
+                grid-area: 4 / 1 / 5 / 2;
+            }
+            &:nth-child(5){
+                grid-area: 5 / 1 / 6 / 2;
+            }
+            &:nth-child(6){
+                grid-area: 6 / 1 / 7 / 2;
+            }
+            &:nth-child(7){
+                display: none !important;
+            }
+            &:nth-child(8){
+                display: none !important;
+            }
+            &:nth-child(9){
+                display: none !important;
+            }
+            &:nth-child(10){
+                display: none !important;
+            }
+            &:nth-child(11){
+                display: none !important;
+            }
+            &:nth-child(12){
+                display: none !important;
+            }
+        }
+        
+        } 
+    }
+
+
+
 }
 
 @media (max-width: 480px){
-    .HeroSelectionList{
-        transform: scale(0.76);
-    }
-    .HeroSection{
-        margin-top: -150px;
-    }
-
-    .TrendingCollection{
-        transform: scale(1);
+    .Main{
+        margin-top: -100px;
     }
 }

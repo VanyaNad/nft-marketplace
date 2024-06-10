@@ -258,7 +258,6 @@ header .burger span:nth-child(odd) {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  width: 100%;
   background-color: var(--background-secondary);
   border-bottom-left-radius: var(--font-size-caption);
   border-bottom-right-radius: var(--font-size-caption);
@@ -393,7 +392,7 @@ header .burger span:nth-child(odd) {
   background-color: var(--call-to-action);
   width: 100px;
   height: 100px;
-  font-family: var(--space-mono);
+  font-family: var(--space-momo);
   font-size: var(--font-size-h5);
 }
 .TrendingCollection .TrendingCard .CardInfo {
@@ -427,70 +426,303 @@ header .burger span:nth-child(odd) {
   height: 24px;
 }
 
+.TopCreators {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+.TopCreators .TopCreatorsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.TopCreators .TopCreatorsHeader .TopCreatorsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  color: var(--text-color);
+}
+.TopCreators .TopCreatorsHeader .TopCreatorsText li:first-child {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-h3);
+}
+.TopCreators .TopCreatorsHeader .TopCreatorsText li:last-child {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-h5);
+}
+.TopCreators .TopCreatorsHeader button {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px 0 50px;
+  border: 2px solid var(--call-to-action);
+  border-radius: 20px;
+  gap: var(--font-size-caption);
+}
+.TopCreators .TopCreatorsHeader button img {
+  color: var(--call-to-action);
+  width: 20px;
+  height: 20px;
+}
+.TopCreators .TopCreatorsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+.TopCreators .TopCreatorsList li {
+  position: relative;
+  width: 240px;
+  height: 238px;
+  background-color: var(--background-secondary);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.TopCreators .TopCreatorsList li .TopCreatorNumber {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  color: var(--capital-label-test);
+  font-family: var(--space-momo);
+  font-size: var(--font-size-base);
+  top: 1.562vh;
+  left: 1.736vh;
+  width: 30px;
+  height: 30px;
+  background-color: var(--background);
+  border-radius: 50%;
+}
+.TopCreators .TopCreatorsList li span {
+  text-align: center;
+  color: var(--text-color);
+  font-family: var(--work-sans);
+  font-size: var(--font-size-h5);
+}
+.TopCreators .TopCreatorsList li span p {
+  font-family: var(--work-sans);
+  font-size: var(--font-size-base);
+  color: var(--capital-label-test);
+}
+.TopCreators .TopCreatorsList li span p span {
+  font-family: var(--space-momo);
+  font-size: var(--font-size-base);
+}
+.TopCreators .TopCreatorsList li img {
+  width: 120px;
+  height: 120px;
+}
+.TopCreators .TopCreatorsList li:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+.TopCreators .TopCreatorsList li:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+.TopCreators .TopCreatorsList li:nth-child(3) {
+  grid-area: 1/3/2/4;
+}
+.TopCreators .TopCreatorsList li:nth-child(4) {
+  grid-area: 1/4/2/5;
+}
+.TopCreators .TopCreatorsList li:nth-child(5) {
+  grid-area: 2/1/3/2;
+}
+.TopCreators .TopCreatorsList li:nth-child(6) {
+  grid-area: 2/2/3/3;
+}
+.TopCreators .TopCreatorsList li:nth-child(7) {
+  grid-area: 2/3/3/4;
+}
+.TopCreators .TopCreatorsList li:nth-child(8) {
+  grid-area: 2/4/3/5;
+}
+.TopCreators .TopCreatorsList li:nth-child(9) {
+  grid-area: 3/1/4/2;
+}
+.TopCreators .TopCreatorsList li:nth-child(10) {
+  grid-area: 3/2/4/3;
+}
+.TopCreators .TopCreatorsList li:nth-child(11) {
+  grid-area: 3/3/4/4;
+}
+.TopCreators .TopCreatorsList li:nth-child(12) {
+  grid-area: 3/4/4/5;
+}
+
 @media (max-width: 1024px) {
-  .HeroSelectionList {
+  .Main {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    margin-top: -50px;
   }
   .CardContent:last-child {
     display: none !important;
   }
-  .TrendingCollection {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
 }
 @media (max-width: 1009px) {
-  .HeroSelectionList {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+  .Main {
+    margin-top: -100px;
   }
-  .TrendingCollection {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+  .TopCreators .TopCreatorsHeader {
+    gap: 50px;
+  }
+  .TopCreators .TopCreatorsHeader .TopCreatorsText li:first-child {
+    font-family: var(--work-sans);
+    font-size: var(--font-size-h4);
+  }
+  .TopCreators .TopCreatorsHeader .TopCreatorsText li:last-child {
+    font-family: var(--work-sans);
+    font-size: var(--font-size-base);
+  }
+  .TopCreators .TopCreatorsList {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .TopCreators .TopCreatorsList li {
+    width: 330px;
+    height: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .TopCreators .TopCreatorsList li span {
+    text-align: start;
+  }
+  .TopCreators .TopCreatorsList li img {
+    width: 60px;
+    height: 60px;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(2) {
+    grid-area: 1/2/2/3;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(3) {
+    grid-area: 2/1/3/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(4) {
+    grid-area: 2/2/3/3;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(5) {
+    grid-area: 3/1/4/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(6) {
+    grid-area: 3/2/4/3;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(7) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(8) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(9) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(10) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(11) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(12) {
+    display: none !important;
   }
 }
 @media (max-width: 900px) {
-  .HeroSelectionList {
+  .Main {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-  }
-  .TrendingCollection {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    margin-top: -150px;
   }
 }
-@media (max-width: 700px) {
-  .HeroSelectionList {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .TrendingCollection {
-    margin-top: -200px;
+@media (max-width: 750px) {
+  .Main {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+    margin-top: -200px;
   }
-  .HeroSection {
-    margin-top: -40px;
+  .Main .HeroSection {
+    -webkit-transform: scale(0.82);
+            transform: scale(0.82);
   }
 }
 @media (max-width: 620px) {
-  .HeroSelectionList {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+  .Main {
+    margin-top: -250px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
-  .TrendingCollection {
-    margin-top: -300px;
+  .Main .HeroSection {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 @media (max-width: 550px) {
+  .Main {
+    margin-top: -100px;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
   .HeroSelectionList {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
     z-index: 0;
   }
   .HeroSection {
@@ -511,21 +743,70 @@ header .burger span:nth-child(odd) {
   }
   .TrendingCollection {
     margin-top: -200px;
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+  }
+  .TopCreators {
+    margin-top: -100px;
+  }
+  .TopCreators .TopCreatorsHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .TopCreators .TopCreatorsHeader button {
+    height: 60px;
+  }
+  .TopCreators .TopCreatorsList {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .TopCreators .TopCreatorsList li {
+    width: 100%;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(2) {
+    grid-area: 2/1/3/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(3) {
+    grid-area: 3/1/4/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(4) {
+    grid-area: 4/1/5/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(5) {
+    grid-area: 5/1/6/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(6) {
+    grid-area: 6/1/7/2;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(7) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(8) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(9) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(10) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(11) {
+    display: none !important;
+  }
+  .TopCreators .TopCreatorsList li:nth-child(12) {
+    display: none !important;
   }
 }
 @media (max-width: 480px) {
-  .HeroSelectionList {
-    -webkit-transform: scale(0.76);
-            transform: scale(0.76);
-  }
-  .HeroSection {
-    margin-top: -150px;
-  }
-  .TrendingCollection {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  .Main {
+    margin-top: -100px;
   }
 }
 @media (max-width: 1024px) {
