@@ -11,6 +11,10 @@
 
     }
 
+    .MashroomsContainer{
+        transform: scale(0.9);
+    }
+
 }
 
 @media (max-width: 1009px){
@@ -225,6 +229,34 @@
         }
         
         } 
+    }
+    .MagicMashrooms{
+        margin-top: -60px;
+        .BackGradient{
+            .MashroomsContainer{
+                flex-direction: column;
+                align-items: start;
+                gap: 30px;
+
+                .MashroomsContainerDetails{
+                    .MashroomsButton{
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .MashroomsContainerClock{
+                        width: 100%;
+                        align-items: center;
+                        .ClockContainer{
+                            transform: scale(1.3);
+
+
+                        }
+                }
+            }
+        }
     }
 
 

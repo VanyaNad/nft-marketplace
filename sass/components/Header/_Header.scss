@@ -10,6 +10,7 @@ header{
     justify-content: space-evenly;
     height: 100px;
     color: var(--text-color);
+    z-index: 2;
     
     .HeaderLogo{
         cursor: pointer;
