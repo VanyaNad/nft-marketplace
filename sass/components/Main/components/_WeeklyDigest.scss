@@ -1,0 +1,67 @@
+.JoinOurDigist{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .JoinOutDigistWrapper{
+        // width: 930px;
+        padding: 60px;
+        background-color: var(--background-secondary);
+        border-radius: var(--border-radius-20);
+
+        .JoinOutDigistList{
+            display: flex;
+            gap: 80px;
+            color: var(--text-color);
+
+                .DigistDetails{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    padding: 19px 0 19px 0;
+                    font-family: var(--work-sans);
+                    .TextWrapper{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .DigestTitle{
+                            font-size: var(--font-size-h3);
+                        }
+                        .DigestText{
+                            font-size: var(--font-size-h5);
+                        }
+                    }
+
+                    .DigestForm{
+                        form{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            input{
+                                outline: none;
+                                width: 250px;
+                                height: 60px;
+                                border-radius: var(--border-radius-20);
+                                border: 0px;
+                                &::placeholder{
+                                    padding-left: 20px;
+                                    color: var(--background);
+                                    font-size: var(--font-size-base);
+                                    font-family: var(--work-sans);
+                                }
+                            }   
+                            button{
+                                transform: translateX(-50px);
+                                @include ButtonWithImage(var(--call-to-action),
+                                60px, 211px,   
+                                12px, 20px, 20px, var(--font-size-base));
+                            }
+                        }
+                            
+                    }
+
+                    
+                }
+        }
+    }
+}

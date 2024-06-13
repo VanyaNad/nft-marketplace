@@ -57,6 +57,7 @@ header{
         cursor: pointer;
 
         span {
+            border-radius: var(--border-radius-20);
             background: var(--text-color);
             height: 1.5px;
             width: 100%;

@@ -1,0 +1,70 @@
+.HowItWorks{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .HowItWorksWrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        .HowItWorksTitle{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-self: start;
+            color: var(--text-color);
+            font-family: var(--work-sans);
+            li{
+                &:first-child{
+                    font-size: var(--font-size-h3);
+                }
+
+                &:last-child{
+                    font-size: var(--font-size-h5);
+                }
+            }
+        }
+
+        .HowItWorksCards{
+            display: flex;
+            gap: 30px;
+            color: var(--text-color);
+            font-family: var(--work-sans);
+
+            .HowItWorksCard{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                background-color: var(--background-secondary);
+                border-radius: var(--border-radius-20);
+
+                img{
+                    width: 330px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    li{
+                        text-align: center;
+                        word-spacing: 2px;
+                        line-height: 1.3;
+                        &:nth-child(1){
+                            font-size: var(--font-size-h5);
+                        }   
+
+                        &:nth-child(2){
+                            font-size: var(--font-size-caption);
+                            padding-bottom: 30px;
+                        }
+                    }
+
+                }
+
+                
+            }
+        }
+    }
+    
+    
+}

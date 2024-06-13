@@ -25,7 +25,7 @@
     --font-size-h2: 51px;
     --font-size-base: 16px;
     --font-size-caption: 12px;
-    --border-radius-20:20%;
+    --border-radius-20:20px;
 }
 
 @mixin ButtonWithImage($bc, $H, $W, $gap, $imgH, $imgW, $fs){
@@ -35,7 +35,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: var(--font-size-caption);
+        border-radius: var(--border-radius-20);
         width: $W;
         height: $H;
         gap: $gap;
