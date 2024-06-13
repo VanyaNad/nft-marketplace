@@ -1,0 +1,42 @@
+@media (max-width: 1024px){
+    .Footer{
+        .FooterDetails{
+            flex-direction: column;
+            .FooterColList{
+                margin-bottom: 20px;
+                li{
+                    form{
+                        justify-content: flex-start;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .Footer{
+        .FooterDetails{
+            flex-direction: column;
+            .FooterColList{
+                margin-bottom: 20px;
+                li{
+                    form{
+                        gap: 20px;
+                        flex-direction: column;
+                        input{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+

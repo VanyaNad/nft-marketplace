@@ -4,6 +4,7 @@
   --space-momo: Space Mono;
   --work-sans: Work Sans;
   --background: #2B2B2B;
+  --ccc-color:#CCCCCC;
   --background-secondary:#3B3B3B;
   --capital-label-test:#858584;
   --text-color:#FFFFFF;
@@ -862,6 +863,7 @@ header .burger span:nth-child(odd) {
           align-items: center;
 }
 .JoinOurDigist .JoinOutDigistWrapper {
+  width: 930px;
   padding: 60px;
   background-color: var(--background-secondary);
   border-radius: var(--border-radius-20);
@@ -1416,8 +1418,205 @@ header .burger span:nth-child(odd) {
   }
 }
 .Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 80px;
-  height: 500px;
-  width: 100%;
   background-color: var(--background-secondary);
+}
+.Footer .FooterDetails {
+  width: 80vw;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.Footer .FooterDetails .FooterColList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.Footer .FooterDetails .FooterColList h1 {
+  color: var(--text-color);
+  font-family: var(--space-momo);
+  font-size: var(--font-size-h5);
+}
+.Footer .FooterDetails .FooterColList .FooterLogo {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.Footer .FooterDetails .FooterColList .FooterLogo img {
+  -webkit-filter: var(--filter-white-to-action-color);
+          filter: var(--filter-white-to-action-color);
+  width: 32px;
+  height: 32px;
+}
+.Footer .FooterDetails .FooterColList li {
+  color: var(--ccc-color);
+  font-family: var(--work-sans);
+  font-size: var(--font-size-base);
+}
+.Footer .FooterDetails .FooterColList li form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.Footer .FooterDetails .FooterColList li form input {
+  outline: none;
+  width: 250px;
+  height: 60px;
+  border-radius: var(--border-radius-20);
+  border: 0px;
+}
+.Footer .FooterDetails .FooterColList li form input::-webkit-input-placeholder {
+  padding-left: 20px;
+  color: var(--background);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+}
+.Footer .FooterDetails .FooterColList li form input::-moz-placeholder {
+  padding-left: 20px;
+  color: var(--background);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+}
+.Footer .FooterDetails .FooterColList li form input:-ms-input-placeholder {
+  padding-left: 20px;
+  color: var(--background);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+}
+.Footer .FooterDetails .FooterColList li form input::-ms-input-placeholder {
+  padding-left: 20px;
+  color: var(--background);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+}
+.Footer .FooterDetails .FooterColList li form input::placeholder {
+  padding-left: 20px;
+  color: var(--background);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+}
+.Footer .FooterDetails .FooterColList li form button {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--call-to-action);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: var(--border-radius-20);
+  width: 211px;
+  height: 60px;
+  gap: 12px;
+  font-size: var(--font-size-base);
+}
+.Footer .FooterDetails .FooterColList li form button img {
+  height: 20px;
+  width: 20px;
+}
+.Footer .FooterDetails .FooterColList .FooterLinkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.Footer .FigmaTemplateText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  color: var(--ccc-color);
+  font-family: var(--work-sans);
+  font-size: var(--font-size-caption);
+  width: 70%;
+  height: 33px;
+  border-top: 1px solid var(--ccc-color);
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .Footer .FooterDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer .FooterDetails .FooterColList {
+    margin-bottom: 20px;
+  }
+  .Footer .FooterDetails .FooterColList li form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (max-width: 550px) {
+  .Footer .FooterDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer .FooterDetails .FooterColList {
+    margin-bottom: 20px;
+  }
+  .Footer .FooterDetails .FooterColList li form {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer .FooterDetails .FooterColList li form input {
+    width: 100%;
+  }
+  .Footer .FooterDetails .FooterColList li form button {
+    width: 100%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
