@@ -1,0 +1,35 @@
+.ConnectWalletMain{
+    @include SignUp-WalletPageMain;
+
+    .LeftImageWallet{
+        @include    LeftImgSignUpWalletPage('../../../../assets/images/ConnectWaletPageImg.png');
+
+    }
+
+    .WalletDetails{
+        @include    WalletSignUpDetail;
+
+        .WalletList{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: var(--text-color);
+            font-size: var(--font-size-h5);
+            font-family: var(--work-sans);
+            width: 330px;
+
+            li{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                background-color: var(--background-secondary);
+                border-radius: var(--border-radius-20);
+                border: 1px solid var(--call-to-action);
+
+                img{
+                    padding: 16px 20px 16px 40px;
+                }
+            }
+        }
+    }
+}
