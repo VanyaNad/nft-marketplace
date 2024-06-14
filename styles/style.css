@@ -1117,7 +1117,7 @@ header .burger span:nth-child(odd) {
 }
 .ConnectWalletMain .LeftImageWallet {
   width: 50%;
-  background: url("https://vanyanad.github.io/nft-marketplace/assets/images/ConnectWaletPageImg.png") center/cover no-repeat center/cover no-repeat;
+  background: url("https://vanyanad.github.io/nft-marketplace/assets/images/ConnectWaletPageImg.png") center/cover no-repeat;
 }
 .ConnectWalletMain .WalletDetails {
   display: -webkit-box;
