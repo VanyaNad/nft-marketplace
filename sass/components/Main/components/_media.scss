@@ -401,7 +401,7 @@
 
     .SignUpMain{
         flex-direction: column;
-
+        justify-content: start;
         .LeftImageSignUp{
             width: 100%;
             height: 232px;
@@ -428,6 +428,7 @@
     }
 
     .ConnectWalletMain{
+        justify-content: start;
         flex-direction: column;
         .LeftImageWallet{
             width: 100%;
