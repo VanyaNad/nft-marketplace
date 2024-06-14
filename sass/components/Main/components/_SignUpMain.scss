@@ -2,7 +2,7 @@
     @include SignUp-WalletPageMain;
 
     .LeftImageSignUp{
-        @include   LeftImgSignUpWalletPage(url("../../../../assets/images/SignUpPageImg.png"));
+        @include   LeftImgSignUpWalletPage(url("https://vanyanad.github.io/nft-marketplace/assets/images/SignUpPageImg.png"));
 
     }
 
@@ -53,7 +53,7 @@
                     background-image: url("../../../../assets/icons/LockKeyGrey.png");
             }
             #confirmPassword{
-                
+
                     background-image: url("../../../../assets/icons/LockKeyGrey.png");
             }
         }

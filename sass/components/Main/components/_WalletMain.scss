@@ -2,7 +2,7 @@
     @include SignUp-WalletPageMain;
 
     .LeftImageWallet{
-        @include    LeftImgSignUpWalletPage(url("../../../../assets/images/ConnectWaletPageImg.png"));
+        @include    LeftImgSignUpWalletPage(url("https://vanyanad.github.io/nft-marketplace/assets/images/ConnectWaletPageImg.png") center/cover no-repeat);
 
     }
 
