@@ -61,7 +61,7 @@
 @mixin LeftImgSignUpWalletPage($urlPath){
     width: 50%;
     background:         
-    url($urlPath)   
+    $urlPath   
     center/cover 
     no-repeat;
 }

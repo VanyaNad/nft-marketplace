@@ -1092,16 +1092,16 @@ header .burger span:nth-child(odd) {
   color: var(--background);
 }
 .SignUpMain .SignUpDetails .SignUpForm #username {
-  background-image: url(../../../../assets/icons/UserGrey.png);
+  background-image: url("../../../../assets/icons/UserGrey.png");
 }
 .SignUpMain .SignUpDetails .SignUpForm #email {
-  background-image: url(../../../../assets/icons/EnvelopeSimpleGrey.png);
+  background-image: url("../../../../assets/icons/EnvelopeSimpleGrey.png");
 }
 .SignUpMain .SignUpDetails .SignUpForm #password {
-  background-image: url(../../../../assets/icons/LockKeyGrey.png);
+  background-image: url("../../../../assets/icons/LockKeyGrey.png");
 }
 .SignUpMain .SignUpDetails .SignUpForm #confirmPassword {
-  background-image: url(../../../../assets/icons/LockKeyGrey.png);
+  background-image: url("../../../../assets/icons/LockKeyGrey.png");
 }
 
 .ConnectWalletMain {

@@ -2,7 +2,7 @@
     @include SignUp-WalletPageMain;
 
     .LeftImageWallet{
-        @include    LeftImgSignUpWalletPage('../../../../assets/images/ConnectWaletPageImg.png');
+        @include    LeftImgSignUpWalletPage(url("../../../../assets/images/ConnectWaletPageImg.png"));
 
     }
 
