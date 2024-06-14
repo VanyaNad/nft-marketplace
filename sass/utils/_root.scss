@@ -41,6 +41,11 @@
         height: $H;
         gap: $gap;
         font-size: $fs;
+        a{
+            display: flex;
+            align-items: center;
+            gap: $gap;
+        }
             
         img{
             height: $imgH;

@@ -127,6 +127,15 @@ header .HeaderList button {
   gap: 12px;
   font-size: var(--font-size-base);
 }
+header .HeaderList button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
 header .HeaderList button img {
   height: 20px;
   width: 20px;
@@ -215,6 +224,15 @@ header .burger span:nth-child(odd) {
   height: 60px;
   gap: 12px;
   font-size: var(--font-size-base);
+}
+.HeroSection .HeroSelectionList .LeftHeroSection button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
 }
 .HeroSection .HeroSelectionList .LeftHeroSection button img {
   height: 20px;
@@ -697,6 +715,15 @@ header .burger span:nth-child(odd) {
   font-size: var(--font-size-base);
   color: var(--background);
 }
+.MagicMashrooms .BackGradient .MashroomsContainer .MashroomsContainerDetails .MashroomsButton button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
 .MagicMashrooms .BackGradient .MashroomsContainer .MashroomsContainerDetails .MashroomsButton button img {
   height: 20px;
   width: 20px;
@@ -972,9 +999,153 @@ header .burger span:nth-child(odd) {
   gap: 12px;
   font-size: var(--font-size-base);
 }
+.JoinOurDigist .JoinOutDigistWrapper .JoinOutDigistList .DigistDetails .DigestForm form button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
 .JoinOurDigist .JoinOutDigistWrapper .JoinOutDigistList .DigistDetails .DigestForm form button img {
   height: 20px;
   width: 20px;
+}
+
+.SignUpMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+  margin-top: 100px;
+  margin-bottom: -80px;
+}
+.SignUpMain .LeftImageSignUp {
+  width: 50%;
+  background: url(../../../../assets/images/SignUpPageImg.png) center/cover no-repeat;
+}
+.SignUpMain .SignUpDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 40px;
+}
+.SignUpMain .SignUpDetails .TextWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  color: var(--text-color);
+}
+.SignUpMain .SignUpDetails .TextWrapper li {
+  font-family: var(--work-sans);
+}
+.SignUpMain .SignUpDetails .TextWrapper li:first-child {
+  font-size: var(--font-size-h2);
+}
+.SignUpMain .SignUpDetails .TextWrapper li:last-child {
+  font-size: var(--font-size-h5);
+}
+.SignUpMain .SignUpDetails .SignUpForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  width: 330px;
+}
+.SignUpMain .SignUpDetails .SignUpForm button {
+  margin-top: 15px;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--call-to-action);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: var(--border-radius-20);
+  width: 211px;
+  height: 43px;
+  gap: 12px;
+  font-size: var(--font-size-base);
+  width: 100%;
+}
+.SignUpMain .SignUpDetails .SignUpForm button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.SignUpMain .SignUpDetails .SignUpForm button img {
+  height: 20px;
+  width: 20px;
+}
+.SignUpMain .SignUpDetails .SignUpForm input {
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: var(--border-radius-20);
+  font-size: var(--font-size-base);
+  font-family: var(--work-sans);
+  background-position: 16px 11px;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+.SignUpMain .SignUpDetails .SignUpForm input::-webkit-input-placeholder {
+  color: var(--background);
+}
+.SignUpMain .SignUpDetails .SignUpForm input::-moz-placeholder {
+  color: var(--background);
+}
+.SignUpMain .SignUpDetails .SignUpForm input:-ms-input-placeholder {
+  color: var(--background);
+}
+.SignUpMain .SignUpDetails .SignUpForm input::-ms-input-placeholder {
+  color: var(--background);
+}
+.SignUpMain .SignUpDetails .SignUpForm input::placeholder {
+  color: var(--background);
+}
+.SignUpMain .SignUpDetails .SignUpForm #username {
+  background-image: url(../../../../assets/icons/UserGrey.png);
+}
+.SignUpMain .SignUpDetails .SignUpForm #email {
+  background-image: url(../../../../assets/icons/EnvelopeSimpleGrey.png);
+}
+.SignUpMain .SignUpDetails .SignUpForm #password {
+  background-image: url(../../../../assets/icons/LockKeyGrey.png);
+}
+.SignUpMain .SignUpDetails .SignUpForm #confirmPassword {
+  background-image: url(../../../../assets/icons/LockKeyGrey.png);
 }
 
 @media (max-width: 1024px) {
@@ -998,6 +1169,9 @@ header .burger span:nth-child(odd) {
   .JoinOutDigistWrapper {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+  .SignUpMain {
+    gap: 40px;
   }
 }
 @media (max-width: 1009px) {
@@ -1090,6 +1264,10 @@ header .burger span:nth-child(odd) {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
+  .SignUpMain .SignUpDetails {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 @media (max-width: 750px) {
   .Main {
@@ -1111,6 +1289,13 @@ header .burger span:nth-child(odd) {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
   }
+  .SignUpMain {
+    gap: 10px;
+  }
+  .SignUpMain .SignUpDetails {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 @media (max-width: 620px) {
   .Main {
@@ -1131,6 +1316,13 @@ header .burger span:nth-child(odd) {
     margin-top: -250px;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
+  }
+  .SignUpMain {
+    gap: 5px;
+  }
+  .SignUpMain .SignUpDetails {
+    -webkit-transform: scale(0.68);
+            transform: scale(0.68);
   }
 }
 @media (max-width: 550px) {
@@ -1315,6 +1507,31 @@ header .burger span:nth-child(odd) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .SignUpMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .SignUpMain .LeftImageSignUp {
+    width: 100%;
+    height: 232px;
+  }
+  .SignUpMain .SignUpDetails {
+    padding-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .SignUpMain .SignUpDetails .TextWrapper li:first-child {
+    font-size: var(--font-size-h3);
+  }
+  .SignUpMain .SignUpDetails .TextWrapper li:last-child {
+    font-size: var(--font-size-base);
   }
 }
 @media (max-width: 480px) {
@@ -1549,6 +1766,15 @@ header .burger span:nth-child(odd) {
   height: 60px;
   gap: 12px;
   font-size: var(--font-size-base);
+}
+.Footer .FooterDetails .FooterColList li form button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
 }
 .Footer .FooterDetails .FooterColList li form button img {
   height: 20px;

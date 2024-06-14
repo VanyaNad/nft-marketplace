@@ -7,32 +7,7 @@
         <link rel="stylesheet" href="styles/style.min.css">
     </head>
     <body>
-        <header>
-            <div class="HeaderLogo">
-                <img src="./assets/icons/Storefront.png" alt>
-                <h1> <a href="index.html">NFT Marketplace</a></h1>
-            </div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="HeaderList">
-                <li>Marketplace</li>
-                <li>Rankings</li>
-                <li>Connect a wallet</li>
-                <li>
-                    <button type="button">
-                        <img src="./assets/icons/User.png" alt>
-                        Sign Up
-                    </button>
-                </li>
-            </ul>
-        </header>
+        <div id="header-container"></div>
         <section class="Main">
 
             <section class="HeroSection">
@@ -49,8 +24,10 @@
                             than 20k NFT artists.
                         </span>
                         <button type="button">
-                            <img src="./assets/icons/RocketLaunch.png" alt>
-                            Get Started
+                            <a href="signUp.html">
+                                <img src="./assets/icons/RocketLaunch.png" alt>
+                                Get Started
+                            </a>
                         </button>
                         <ul class="AddInfoList">
                             <li class="AddInfo">
@@ -304,47 +281,7 @@
                     </ul>
                 </div>
             </section>
-
-            <section class="Footer">
-                <div class="FooterDetails">
-                    <ul class="FooterColList">
-                        <li class="FooterLogo">
-                            <img src="./assets/icons/Storefront.png" alt>
-                            <h1> <a href="index.html">NFT Marketplace</a></h1>
-                        </li>
-                        <li>NFT marketplace UI created <br>
-                             with Anima for Figma.</li>
-                        <li>Join our community</li>
-                        <ul class="FooterLinkList">
-                            <li><img src="./assets/icons/DiscordLogo.png" alt=""></li>
-                            <li><img src="./assets/icons/YoutubeLogo.png" alt=""></li>
-                            <li><img src="./assets/icons/TwitterLogo.png" alt=""></li>
-                            <li><img src="./assets/icons/InstagramLogo.png" alt=""></li>
-                        </ul>
-                    </ul>
-
-                    <ul class="FooterColList">
-                        <h1><a href="#">Explore</a></h1>
-                        <li>Marketplace</li>
-                        <li>Rankings</li>
-                        <li>Connect a wallet</li>
-                    </ul>
-                    <ul class="FooterColList">
-                        <h1><a href="#">Join our weekly digest</a></h1>
-                        <li>Get exclusive promotions & updates <br>
-                             straight to your inbox.</li>
-                        <li>
-                            <form>
-                                <input type="text" placeholder="Enter your email here">
-                                <button type="button">Subscribe</button>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-                <div class="FigmaTemplateText">
-                    Ⓒ NFT Market. Use this template freely.
-                </div>
-            </section>
+            <div id="footer-container"></div>
 
             <script src="./scripts/script.js"></script>
         </body>
